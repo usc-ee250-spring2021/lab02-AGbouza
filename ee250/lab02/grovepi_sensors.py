@@ -55,14 +55,14 @@ if __name__ == '__main__':
             
             if(int(dist) <= rangenum):
                 #if object IS in range
-                setText(rangestr + "cm OBJ PRES "+ "\n" + dist + "cm")
+                setText_norefresh(rangestr + "cm OBJ PRES "+ "\n" + dist + "cm")
             else:    
-                #if object IS in range
-                setText(rangestr + "cm " + "\n" + dist + "cm")
+                #if object IS NOT in range
+                setText_norefresh(rangestr + "cm " + "\n" + dist + "cm")
             
             olddist = dist
             oldrangenum = rangenum
-            time.sleep(0.2)
+            #time.sleep(0.2)
         #setText("Reading: " + dist)
         #print(grovepi.ultrasonicRead(PORT))
         
