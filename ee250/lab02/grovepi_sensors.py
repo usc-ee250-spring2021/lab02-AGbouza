@@ -58,7 +58,7 @@ if __name__ == '__main__':
                 setText_norefresh(rangestr + "cm OBJ PRES "+ "\n" + dist + "cm")
             else:    
                 #if object IS NOT in range
-                setText_norefresh(rangestr + "cm " + "\n" + dist + "cm")
+                setText_norefresh(rangestr + "cm          "+ "\n" + dist + "cm")
             
             olddist = dist
             oldrangenum = rangenum
